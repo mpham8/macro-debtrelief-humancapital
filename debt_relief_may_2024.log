@@ -1,0 +1,94 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Substitution of exo leads: added 1 auxiliary variables and equations.
+Found 17 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 14 equation(s)
+                                 and 14 feedback variable(s).
+Computing dynamic model derivatives (order 1).
+Normalizing the dynamic model...
+Finding the optimal block decomposition of the dynamic model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 14 equation(s)
+                                 and 12 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+y               		 0.690627
+d               		 0.226914
+c               		 0.343139
+r               		 0.07
+ikg             		 0.138418
+sk              		 8.49295
+k               		 0.692088
+ihg             		 0.0941298
+sh              		 8.49295
+h               		 0.470649
+v               		 0.158747
+dgap            		 0
+z               		 0.02
+dl              		 0.226914
+htok            		 0.680043
+a               		 0.927406
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+       4.187e-16        4.187e-16                0
+           0.514            0.514                0
+          0.9287           0.9287                0
+           1.237            1.237                0
+           2.095            2.095                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+
+There are 6 eigenvalue(s) larger than 1 in modulus for 6 forward-looking variable(s)
+The rank condition is verified.
+
+
+STEADY-STATE RESULTS:
+
+y               		 0.734591
+d               		 0.247678
+c               		 0.356962
+r               		 0.06
+ikg             		 0.151084
+sk              		 7.84795
+k               		 0.755418
+ihg             		 0.103973
+sh              		 7.84795
+h               		 0.519864
+v               		 0.0740372
+dgap            		 0
+z               		 0.01
+dl              		 0.247678
+htok            		 0.688181
+a               		 0.936675
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.271802,	 time = 0.089596
+Iter: 2,	 err. = 0.990932,	 time = 0.014417
+Iter: 3,	 err. = 0.187273,	 time = 0.012987
+Iter: 4,	 err. = 0.101751,	 time = 0.01178
+Iter: 5,	 err. = 0.0411817,	 time = 0.016811
+Iter: 6,	 err. = 0.000165078,	 time = 0.01955
+Iter: 7,	 err. = 1.12418e-08,	 time = 0.021554
+
+Total time of simulation: 0.224628.
+--------------------------------------------------------
+
+
+Perfect foresight solution found.
+
