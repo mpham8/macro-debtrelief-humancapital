@@ -19,7 +19,7 @@ Finding the optimal block decomposition of the dynamic model...
   the largest simultaneous block has 14 equation(s)
                                  and 12 feedback variable(s).
 Preprocessing completed.
-Preprocessing time: 0h00m00s.
+Preprocessing time: 0h00m01s.
 
 STEADY-STATE RESULTS:
 
@@ -78,17 +78,18 @@ a               		 0.936675
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 0.271802,	 time = 0.089596
-Iter: 2,	 err. = 0.990932,	 time = 0.014417
-Iter: 3,	 err. = 0.187273,	 time = 0.012987
-Iter: 4,	 err. = 0.101751,	 time = 0.01178
-Iter: 5,	 err. = 0.0411817,	 time = 0.016811
-Iter: 6,	 err. = 0.000165078,	 time = 0.01955
-Iter: 7,	 err. = 1.12418e-08,	 time = 0.021554
+Iter: 1,	 err. = 0.271802,	 time = 0.125641
+Iter: 2,	 err. = 0.990932,	 time = 0.020329
+Iter: 3,	 err. = 0.187273,	 time = 0.025233
+Iter: 4,	 err. = 0.101751,	 time = 0.02355
+Iter: 5,	 err. = 0.0411817,	 time = 0.029332
+Iter: 6,	 err. = 0.000165078,	 time = 0.028086
+Iter: 7,	 err. = 1.12418e-08,	 time = 0.025736
 
-Total time of simulation: 0.224628.
+Total time of simulation: 0.36041.
 --------------------------------------------------------
 
 
 Perfect foresight solution found.
 
+Total computing time : 0h00m05s

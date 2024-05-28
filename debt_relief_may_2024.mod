@@ -161,6 +161,7 @@ perfect_foresight_setup(periods=200);
 // Perform the simulation
 perfect_foresight_solver;
 
+send_endogenous_variables_to_workspace;
 
 // Transform the variables y d c r ikg sk k ihg sh h v dgap z dl htok
 Y = 100*(log(y) - log(yss0));

@@ -553,6 +553,7 @@ M_.exo_det_length = 0;
 options_.periods = 200;
 oo_ = perfect_foresight_setup(M_, options_, oo_);
 [oo_, Simulated_time_series] = perfect_foresight_solver(M_, options_, oo_);
+send_endogenous_variables_to_workspace;
 Y = 100*(log(y) - log(yss0));
 D = 100*(log(d) - log(dss0));
 C = 100*(log(c) - log(css0));
