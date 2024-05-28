@@ -1,0 +1,91 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Substitution of exo leads: added 1 auxiliary variables and equations.
+Found 16 equation(s).
+Evaluating expressions...
+Computing static model derivatives (order 1).
+Normalizing the static model...
+Finding the optimal block decomposition of the static model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 13 equation(s)
+                                 and 13 feedback variable(s).
+Computing dynamic model derivatives (order 1).
+Normalizing the dynamic model...
+Normalization failed with cutoff, trying symbolic normalization...
+Finding the optimal block decomposition of the dynamic model...
+3 block(s) found:
+  2 recursive block(s) and 1 simultaneous block(s).
+  the largest simultaneous block has 13 equation(s)
+                                 and 12 feedback variable(s).
+Preprocessing completed.
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+y               		 0.980433
+d               		 0.322134
+c               		 0.429031
+r               		 0.07
+ikg             		 0.196502
+sk              		 5.43279
+k               		 0.982508
+ihg             		 0.191729
+sh              		 5.43279
+h               		 0.958646
+v               		 0.101547
+dgap            		 0
+z               		 0.02
+dl              		 0.322134
+htok            		 0.975713
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+        4.36e-16         4.36e-16                0
+          0.5098           0.5098                0
+          0.9279           0.9279                0
+           1.172            1.172                0
+           2.078            2.078                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+There are 6 eigenvalue(s) larger than 1 in modulus for 6 forward-looking variable(s)
+The rank condition is verified.
+
+
+STEADY-STATE RESULTS:
+
+y               		 1.10288
+d               		 0.385011
+c               		 0.454184
+r               		 0.07
+ikg             		 0.234856
+sk              		 4.8477
+k               		 1.17428
+ihg             		 0.229153
+sh              		 4.8477
+h               		 1.14576
+v               		 0.0906112
+dgap            		 0
+z               		 0.02
+dl              		 0.385011
+htok            		 0.975713
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.153794,	 time = 0.109086
+Iter: 2,	 err. = 0.0619854,	 time = 0.028919
+Iter: 3,	 err. = 0.00227752,	 time = 0.024456
+Iter: 4,	 err. = 2.28575e-06,	 time = 0.022473
+
+Total time of simulation: 0.214399.
+--------------------------------------------------------
+
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m01s

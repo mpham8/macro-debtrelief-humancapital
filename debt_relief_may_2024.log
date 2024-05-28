@@ -19,7 +19,7 @@ Finding the optimal block decomposition of the dynamic model...
   the largest simultaneous block has 14 equation(s)
                                  and 12 feedback variable(s).
 Preprocessing completed.
-Preprocessing time: 0h00m01s.
+Preprocessing time: 0h00m00s.
 
 STEADY-STATE RESULTS:
 
@@ -58,38 +58,36 @@ The rank condition is verified.
 
 STEADY-STATE RESULTS:
 
-y               		 0.734591
-d               		 0.247678
-c               		 0.356962
-r               		 0.06
-ikg             		 0.151084
-sk              		 7.84795
-k               		 0.755418
-ihg             		 0.103973
-sh              		 7.84795
-h               		 0.519864
-v               		 0.0740372
+y               		 0.776874
+d               		 0.271204
+c               		 0.368846
+r               		 0.07
+ikg             		 0.165435
+sk              		 7.35039
+k               		 0.827173
+ihg             		 0.112503
+sh              		 7.35039
+h               		 0.562513
+v               		 0.13739
 dgap            		 0
-z               		 0.01
-dl              		 0.247678
-htok            		 0.688181
-a               		 0.936675
+z               		 0.02
+dl              		 0.271204
+htok            		 0.680043
+a               		 0.94409
 
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 0.271802,	 time = 0.125641
-Iter: 2,	 err. = 0.990932,	 time = 0.020329
-Iter: 3,	 err. = 0.187273,	 time = 0.025233
-Iter: 4,	 err. = 0.101751,	 time = 0.02355
-Iter: 5,	 err. = 0.0411817,	 time = 0.029332
-Iter: 6,	 err. = 0.000165078,	 time = 0.028086
-Iter: 7,	 err. = 1.12418e-08,	 time = 0.025736
+Iter: 1,	 err. = 0.296505,	 time = 0.071481
+Iter: 2,	 err. = 0.798923,	 time = 0.017192
+Iter: 3,	 err. = 0.206682,	 time = 0.019068
+Iter: 4,	 err. = 0.00391767,	 time = 0.019085
+Iter: 5,	 err. = 4.82922e-06,	 time = 0.016487
 
-Total time of simulation: 0.36041.
+Total time of simulation: 0.169903.
 --------------------------------------------------------
 
 
 Perfect foresight solution found.
 
-Total computing time : 0h00m05s
+Total computing time : 0h00m01s

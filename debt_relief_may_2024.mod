@@ -84,6 +84,7 @@ b = 1;
 eps_dc = 0;
 rho=0.07;    //rate of time preference, JNF = 0.05
 tau = 0.20;
+a = b*h^phi;
 k = ( (b*(1-tau)*alphak^(1-alphah)*(alphah-phi)^alphah)/((delt+rho-dk*(rho-rw))^(1-alphah)*(delt+rho)^alphah) )^(1/(1-alphak-alphah-phi));
 h = ((alphah-phi)/alphak)*((delt+rho-dk*(rho-rw))/(delt+rho))*k;
 y = b*k^alphak*h^alphah;
@@ -127,8 +128,9 @@ check;
 endval;
 b = 1;
 eps_dc = 0;
-rho=0.06;    // 0.07 in baseline and 0.06 when policy reform=cut in disc rate
-tau = 0.2;  // 0.20 in baseline and 0.15 when policy reform=tax cut 
+rho=0.07;    // 0.07 in baseline and 0.06 when policy reform=cut in disc rate
+tau = 0.15;  // 0.20 in baseline and 0.15 when policy reform=tax cut
+a = b*h^phi; 
 k = ( (b*(1-tau)*alphak^(1-alphah)*(alphah-phi)^alphah)/((delt+rho-dk*(rho-rw))^(1-alphah)*(delt+rho)^alphah) )^(1/(1-alphak-alphah-phi));
 h = ((alphah-phi)/alphak)*((delt+rho-dk*(rho-rw))/(delt+rho))*k;
 ihg = delt*h;
@@ -151,7 +153,10 @@ steady;
 
 shocks;
 // 0.25 is debt cancellation value
-var eps_dc; periods 1; values 0.25; end; 
+var eps_dc; 
+periods 1; 
+values 0.25; 
+end; 
 
 
 // Prepare the deterministic simulation of the model over 200 periods
