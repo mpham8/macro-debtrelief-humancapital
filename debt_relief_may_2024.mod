@@ -37,7 +37,7 @@ rw=0.05;      //world interest rate < rho, JNF = 0.04
 taubase=0.20; //baseline tax rate
 //The next parameter yields D = 0.4*Y in baseline SS
 dk = 0.4*(rho+delt)/((1-taubase)*alphak + 0.4*(rho-rw));
-phi = 0.1;        //human capital externality wedge
+phi = 0;        //human capital externality wedge
 
 
 // Equilibrium conditions:
@@ -129,7 +129,7 @@ endval;
 b = 1;
 eps_dc = 0;
 rho=0.07;    // 0.07 in baseline and 0.06 when policy reform=cut in disc rate
-tau = 0.2;  // 0.20 in baseline and 0.15 when policy reform=tax cut
+tau = 0.15;  // 0.20 in baseline and 0.15 when policy reform=tax cut
 a = b*h^phi; 
 k = ( (b*(1-tau)*alphak^(1-alphah)*(alphah-phi)^alphah)/((delt+rho-dk*(rho-rw))^(1-alphah)*(delt+rho)^alphah) )^(1/(1-alphak-alphah-phi));
 h = ((alphah-phi)/alphak)*((delt+rho-dk*(rho-rw))/(delt+rho))*k;
@@ -223,7 +223,7 @@ title(t,'Response to shock(s)');
 // plots_jul22_2020.m for that value of exper.
 
 
-exper = 1;
+exper = 3;
 
 
 if exper == 1;

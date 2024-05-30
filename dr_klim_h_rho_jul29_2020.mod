@@ -117,7 +117,7 @@ endval;
 x = 1;
 eps_dc = 0;
 rho=0.07;    // 0.07 in baseline and 0.06 when policy reform=cut in disc rate
-tau = 0.15;  // 0.20 in baseline and 0.15 when policy reform=tax cut 
+tau = 0.2;  // 0.20 in baseline and 0.15 when policy reform=tax cut 
 k = (x*(1-tau)*alphak^(1-alphah)*alphah^alphah/(rho+delt-dk*(rho-rw))^(1-alphah)*(rho+delt)^alphah)^(1/(1-alphak-alphah));
 ikg = delt*k;
 h = (alphah/alphak)*((delt+rho-dk*(rho-rw))/(delt+rho))*k;
@@ -141,7 +141,7 @@ shocks;
 // 0.25 is debt cancellation value
 var eps_dc; 
 periods 1; 
-values 0; 
+values 0.25; 
 end; 
 
 // Prepare the deterministic simulation of the model over 200 periods
