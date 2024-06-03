@@ -1,0 +1,22 @@
+model,welfare decimal change
+Fixed debt limit - Debt Relief Only,2.74
+Fixed debt limit - Policy Reform Only,0.56
+Fixed debt limit- Debt Relief & Policy Reform,3.36
+GDP debt limit - Debt Relief Only,2.7
+GDP debt limit - Policy Reform Only,0.57
+GDP debt limit - Debt Relief & Policy Reform,3.34
+K debt limit - Debt Relief Only,2.57
+K debt limit - Policy Reform Only,0.63
+K debt limit - Debt Relief & Policy Reform,3.26
+"Human capital, phi = 0, K debt limit - Debt Relief Only",3.85
+"Human capital, phi = 0, K debt limit - Policy Reform Only",0.3
+"Human capital, phi = 0, K debt limit - Debt Relief & Policy Reform",4.24
+"Human capital, phi = 0.1, K debt limit - Debt Relief Only",5.78
+"Human capital, phi = 0.1, K debt limit - Policy Reform Only",1.71
+"Human capital, phi = 0.1, K debt limit - Debt Relief & Policy Reform",7.77
+"Discount Rate Policy, Human capital, phi = 0, K debt limit - Debt Relief Only",3.85
+"Human capital, phi = 0, discount rate policy, K debt limit - Policy Reform Only",0.25
+"Human capital, phi = 0, discount rate policy, K debt limit - Debt Relief & Policy Reform",4.14
+"Human capital, phi = 0.1, discount rate policy, K debt limit - Debt Relief Only",5.78
+"Human capital, phi = 0.1, discount rate policy, K debt limit - Policy Reform Only",1.04
+"Human capital, phi = 0.1, discount rate policy, K debt limit - Debt Relief & Policy Reform",6.86

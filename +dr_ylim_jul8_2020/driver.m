@@ -424,7 +424,7 @@ oo_.initial_steady_state = oo_.steady_state;
 oo_.initial_exo_steady_state = oo_.exo_steady_state;
 oo_.exo_steady_state(1) = 1;
 oo_.exo_steady_state(3) = 0;
-oo_.exo_steady_state(2) = 0.15;
+oo_.exo_steady_state(2) = 0.2;
 oo_.steady_state(7) = (oo_.exo_steady_state(1)*M_.params(1)*(1-oo_.exo_steady_state(2))*(1+M_.params(8)*(M_.params(4)-M_.params(7))/((1-oo_.exo_steady_state(2))*(1+M_.params(4))))/(M_.params(4)+M_.params(3)))^(1/(1-M_.params(1)));
 oo_.steady_state(5) = M_.params(3)*oo_.steady_state(7);
 oo_.steady_state(1) = oo_.exo_steady_state(1)*oo_.steady_state(7)^M_.params(1);
@@ -441,7 +441,7 @@ steady;
 % SHOCKS instructions
 %
 M_.det_shocks = [ M_.det_shocks;
-struct('exo_det',false,'exo_id',3,'type','level','periods',1:1,'value',0) ];
+struct('exo_det',false,'exo_id',3,'type','level','periods',1:1,'value',0.25) ];
 M_.exo_det_length = 0;
 options_.periods = 200;
 oo_ = perfect_foresight_setup(M_, options_, oo_);
@@ -462,15 +462,12 @@ nexttile; plot(Y(1:25,1)); title("Output");
 nexttile; plot(R(1:25,1)); title("Real interest rate"); 
 nexttile; plot(D(1:25,1)); title("External Debt"); 
 title(t,'Response to shock(s)');
-exper = 2;
+exper = 1;
 if exper == 1;
-save just_dshock Y D C R I S K v dgap z;
 save just_dshock_ylim Y D C R I S K v dgap z;
 elseif exper == 2;
-save just_policy Y D C R I S K v dgap z;
 save just_policy_ylim Y D C R I S K v dgap z;
 else;
-save dshock_policy Y D C R I S K v dgap z;
 save dshock_policy_ylim Y D C R I S K v dgap z;
 end;
 

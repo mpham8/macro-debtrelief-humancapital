@@ -42,14 +42,14 @@ htok            		 0.975713
 
 EIGENVALUES:
          Modulus             Real        Imaginary
-        4.36e-16         4.36e-16                0
-          0.5098           0.5098                0
-          0.9279           0.9279                0
-           1.172            1.172                0
-           2.078            2.078                0
+       6.633e-16        6.633e-16                0
+           0.515            0.515                0
+          0.9281           0.9281                0
+           1.173            1.173                0
+           2.068            2.068                0
              Inf              Inf                0
              Inf              Inf                0
-             Inf             -Inf                0
+             Inf              Inf                0
              Inf             -Inf                0
 
 There are 6 eigenvalue(s) larger than 1 in modulus for 6 forward-looking variable(s)
@@ -59,30 +59,30 @@ The rank condition is verified.
 STEADY-STATE RESULTS:
 
 y               		 1.10288
-d               		 0.385011
+d               		 0.385012
 c               		 0.454184
 r               		 0.07
-ikg             		 0.234856
+ikg             		 0.234857
 sk              		 4.8477
-k               		 1.17428
+k               		 1.17429
 ihg             		 0.229153
 sh              		 4.8477
-h               		 1.14576
+h               		 1.14577
 v               		 0.0906112
 dgap            		 0
 z               		 0.02
-dl              		 0.385011
+dl              		 0.385012
 htok            		 0.975713
 
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 0.153794,	 time = 0.109086
-Iter: 2,	 err. = 0.0619854,	 time = 0.028919
-Iter: 3,	 err. = 0.00227752,	 time = 0.024456
-Iter: 4,	 err. = 2.28575e-06,	 time = 0.022473
+Iter: 1,	 err. = 0.153797,	 time = 0.113589
+Iter: 2,	 err. = 0.0624956,	 time = 0.018026
+Iter: 3,	 err. = 0.00222235,	 time = 0.015977
+Iter: 4,	 err. = 2.26645e-06,	 time = 0.0251
 
-Total time of simulation: 0.214399.
+Total time of simulation: 0.197548.
 --------------------------------------------------------
 
 

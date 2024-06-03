@@ -559,13 +559,13 @@ nexttile; plot(R(1:25,1)); title("Real interest rate");
 nexttile; plot(D(1:25,1)); title("External debt");
 nexttile; plot(HTOK(1:25,1)); title("Ratio of H to K");
 title(t,'Response to shock(s)');
-exper = 3;
+exper = 2;
 if exper == 1;
-save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
+save just_dshock_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 elseif exper == 2;
-save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+save just_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 else;
-save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+save dshock_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 end;
 
 

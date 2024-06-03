@@ -37,7 +37,7 @@ rw=0.05;      //world interest rate < rho, JNF = 0.04
 taubase=0.20; //baseline tax rate
 //The next parameter yields D = 0.4*Y in baseline SS
 dk = 0.4*(rho+delt)/((1-taubase)*alphak + 0.4*(rho-rw));
-phi = 0;        //human capital externality wedge
+phi = 0.1;        //human capital externality wedge
 
 
 // Equilibrium conditions:
@@ -226,13 +226,13 @@ title(t,'Response to shock(s)');
 exper = 3;
 
 
-if exper == 1;
-  save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
+//if exper == 1;
+  //save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
 //  save just_dshock_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
-elseif exper == 2;
-  save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+//elseif exper == 2;
+  //save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
 //  save just_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
-else;
-  save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+//else;
+  //save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
 //  save dshock_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
-end;
+//end;

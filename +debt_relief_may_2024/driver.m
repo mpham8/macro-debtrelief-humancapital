@@ -475,7 +475,7 @@ M_.params(8) = 0.20;
 taubase = M_.params(8);
 M_.params(9) = 0.4*(oo_.exo_steady_state(3)+M_.params(4))/((1-M_.params(8))*M_.params(1)+0.4*(oo_.exo_steady_state(3)-M_.params(7)));
 dk = M_.params(9);
-M_.params(10) = 0;
+M_.params(10) = 0.1;
 phi = M_.params(10);
 %
 % INITVAL instructions
@@ -579,13 +579,6 @@ nexttile; plot(D(1:25,1)); title("External debt");
 nexttile; plot(HTOK(1:25,1)); title("Ratio of H to K");
 title(t,'Response to shock(s)');
 exper = 3;
-if exper == 1;
-save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
-elseif exper == 2;
-save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
-else;
-save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
-end;
 
 
 oo_.time = toc(tic0);

@@ -52,27 +52,28 @@ The rank condition is verified.
 
 STEADY-STATE RESULTS:
 
-y               		 1.02337
-d               		 0.409349
-c               		 0.638401
+y               		 0.993534
+d               		 0.397414
+c               		 0.627556
 r               		 0.07
-ig              		 0.214505
-s               		 2.45364
-k               		 1.07252
-v               		 0.0458625
+ig              		 0.196107
+s               		 2.53919
+k               		 0.980535
+v               		 0.0474614
 dgap            		 0
 z               		 0.02
-dl              		 0.409349
+dl              		 0.397414
 
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 0.0736772,	 time = 0.057457
-Iter: 2,	 err. = 0.00881962,	 time = 0.010274
-Iter: 3,	 err. = 5.99945e-05,	 time = 0.017407
-Iter: 4,	 err. = 9.93154e-10,	 time = 0.016754
+Iter: 1,	 err. = 0.25,	 time = 0.074015
+Iter: 2,	 err. = 0.261119,	 time = 0.015245
+Iter: 3,	 err. = 0.0143297,	 time = 0.02014
+Iter: 4,	 err. = 0.000224326,	 time = 0.022131
+Iter: 5,	 err. = 2.87495e-08,	 time = 0.022728
 
-Total time of simulation: 0.118057.
+Total time of simulation: 0.175662.
 --------------------------------------------------------
 
 

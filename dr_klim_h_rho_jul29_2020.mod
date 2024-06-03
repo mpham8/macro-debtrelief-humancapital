@@ -45,14 +45,14 @@ d = d(-1) + rw*d(-1) + c + ikg + ihg + g*y - y - eps_dc;
    // 3. Euler equation
 c^(-gam) = (1+rho)^(-1)*(1+r)*c(+1)^(-gam); 
    // 4. Investment function for physical capital
-ikg = delt*k(-1) + (1/mu)*(1-(c^(-gam)/sk));
+ikg = k(-1) * (delt + (1/mu)*(1-(c^(-gam)/sk)));
    // 5. Shadow price on capital, modified for endogenous debt limit
 sk = dk*v + (1+rho)^(-1)*( c(+1)^(-gam)*(1-tau)*alphak*x(+1)*k^(alphak-1)*h^alphah
   + sk(+1)*(1 - delt + (mu/2)*((ikg(+1)/k)^2-delt^2)) );
    // 6. Dynamics of physical capital stock
 k = (1-delt)*k(-1) + ikg - (mu/2)*(((ikg/k(-1))-delt)^2)*k(-1);
    // 7. Investment function for human capital
-ihg = delt*h(-1) + (1/mu)*(1-(c^(-gam)/sh));
+ihg = h(-1) * (delt + (1/mu)*(1-(c^(-gam)/sh)));
    // 8. Shadow price on human capital
 sh = (1+rho)^(-1)*( c(+1)^(-gam)*(1-tau)*alphah*x(+1)*k^alphak*h^(alphah-1)
   + sh(+1)*(1 - delt + (mu/2)*((ihg(+1)/h)^2-delt^2)) );
@@ -117,7 +117,7 @@ endval;
 x = 1;
 eps_dc = 0;
 rho=0.07;    // 0.07 in baseline and 0.06 when policy reform=cut in disc rate
-tau = 0.2;  // 0.20 in baseline and 0.15 when policy reform=tax cut 
+tau = 0.15;  // 0.20 in baseline and 0.15 when policy reform=tax cut 
 k = (x*(1-tau)*alphak^(1-alphah)*alphah^alphah/(rho+delt-dk*(rho-rw))^(1-alphah)*(rho+delt)^alphah)^(1/(1-alphak-alphah));
 ikg = delt*k;
 h = (alphah/alphak)*((delt+rho-dk*(rho-rw))/(delt+rho))*k;
@@ -141,7 +141,7 @@ shocks;
 // 0.25 is debt cancellation value
 var eps_dc; 
 periods 1; 
-values 0.25; 
+values 0; 
 end; 
 
 // Prepare the deterministic simulation of the model over 200 periods
@@ -202,15 +202,15 @@ title(t,'Response to shock(s)');
 // debtrelief_klim_jul11_2020.mod for a given value of exper, and then run
 // plots_jul22_2020.m for that value of exper.
 
-exper = 3;
+exper = 2;
 
 if exper == 1;
-  save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
-//  save just_dshock_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
+  //save just_dshock_h Y D C R IK SK K IH SH H v dgap z HTOK;
+  save just_dshock_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 elseif exper == 2;
-  save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
-//  save just_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
+  //save just_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+  save just_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 else;
-  save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
-//  save dshock_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
+  //save dshock_policy_h Y D C R IK SK K IH SH H v dgap z HTOK;
+  save dshock_policy_h_klim Y D C R IK SK K IH SH H v dgap z HTOK;
 end;
