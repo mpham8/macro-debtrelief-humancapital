@@ -89,7 +89,7 @@ check;
 endval;
 x = 1;
 eps_dc = 0;
-tau = 0.2; // 0.15 in tax cut runs
+tau = 0.15; // 0.15 in tax cut runs
 k = (x*alph*(1-tau)/(delt+rho))^(1/(1-alph));
 ig = delt*k;
 y = x*k^alph;
@@ -107,7 +107,7 @@ steady;
 
 shocks;
 // 0.25 is debt cancellation value
-var eps_dc; periods 1; values 0.25; end; 
+var eps_dc; periods 1; values 0; end; 
 
 // JNF uses this command, which seems to generate the same output:
 // simul(periods=200); 
@@ -166,7 +166,7 @@ title(t,'Response to shock(s)');
 // debtrelief_klim_jul11_2020.mod for a given value of exper, and then run
 // plots_jul22_2020.m for that value of exper.
  
-exper = 1;
+exper = 2;
 
 if exper == 1;
   //save just_dshock Y D C R I S K v dgap z;
